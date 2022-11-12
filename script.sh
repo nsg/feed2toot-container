@@ -10,4 +10,7 @@ while [ ! -e feed2toot.ini ]; do
     sleep 10
 done
 
-feed2toot -c feed2toot.ini
+while [ 1 ]; do
+    feed2toot -c feed2toot.ini
+    sleep 300
+done
